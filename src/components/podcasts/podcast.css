@@ -1,0 +1,60 @@
+.card-img-top{
+    height: 600px;
+    width: auto;
+    align-self: center;
+    justify-self: center;
+    border-radius: 1rem;
+}
+.podcast{
+  text-align: center;
+}
+.badge{
+    margin: 0px 5px;
+}
+.styles{
+    display: inline;
+}
+.card{
+    background: transparent;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;   
+}
+.podcast-title{
+    padding-bottom: 2rem;
+}
+.card-text{
+    margin: 1rem 0;
+    color: white;
+}
+
+
+/* ========== Media  Queries (MED DEVICES)===============*/
+@media screen and (max-width: 1024px) {
+    .bottom-spacer{
+        height: 30px;
+    }
+}
+
+/* ========== Media  Queries (SMALL DEVICES)===============*/
+@media screen and (max-width: 600px) {
+    .card-img-top{
+        height: auto;
+        width: 99%;
+        align-self: center;
+    }
+    .card{
+        background: transparent;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
+
+
+
+
+

@@ -1,0 +1,53 @@
+.soon{
+    text-align: center;
+    display: block;
+    position: relative;
+    width: 90%;
+}
+.soon-slider{
+    position: relative;
+    /* height: 500px !important; */
+    width: 80%;
+    aspect-ratio: 1/1;
+    justify-self: center;
+    text-align: center;
+    align-self: center;
+    margin: 30px 30px;
+    border-radius: 1rem 1rem;
+}
+
+.slide img{
+    position: relative;
+
+    aspect-ratio: 1/1;
+    border-radius: 1rem 1rem;
+}
+
+/* ========== Media  Queries (SMALL DEVICES)===============*/
+@media screen and (max-width: 600px) {
+    .section{
+        margin-top: 0;
+    }
+    .soon{
+        width: 100%;
+    }
+    .soon-slider{
+        height: unset;
+        width: 100%;
+    }
+    .slide img{
+        position: relative;
+        align-self: center;
+        width: 100%;
+        height: unset !important;
+        aspect-ratio: 1/1;
+    }
+}
+
+/* ========== Media  Queries (MED DEVICES)===============*/
+@media screen and (max-width: 1024px) {
+.soon{
+    width: 100%;
+    margin-top: 0;
+}
+  }

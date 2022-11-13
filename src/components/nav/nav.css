@@ -1,0 +1,156 @@
+nav {
+  height: var(--menu-space);
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  -webkit-box-shadow: 10px 10px 25px 4px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 1 0px 10px 25px 4px rgba(34, 60, 80, 0.2);
+  box-shadow: 10px 10px 25px 4px rgba(34, 60, 80, 0.2);
+  display: grid;
+  grid-template-columns: 250px 250px 1fr auto;
+  width: max-content;
+  grid-row: 1;
+  /*start, end, center, stretch*/
+  justify-items: end;
+  /*start, end, center, stretch*/
+  align-items: center;
+  width: 100%;
+  gap: 0.1rem;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+.clock {
+  justify-self:end;
+  align-self: center;
+  text-align: end;
+  width: 250px;
+
+}
+
+.logo {
+  position: relative;
+  width: 150px;
+  justify-self: start;
+}
+
+nav a {
+  background: transparent;
+  padding: 0.2rem 0;
+  font-size: 0.9rem;
+  display: flex;
+  color: var(--color-white);
+}
+
+nav a:hover {
+  /* background: rgba(0, 0, 0, 0.2); */
+  color: var(--color-hover);
+}
+
+nav a.active {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+/* .top-navigation-sm {
+    display: none;
+} */
+.btn-success {
+  color: white;
+  border: none;
+}
+
+.btn-success:hover {
+  color: green;
+  background-color: #ccc;
+  border: none;
+}
+
+.btn-donation {
+  padding: 10px 15px;
+  margin: 0px 20px;
+  color: white;
+  justify-self: center;
+  align-self: center;
+}
+
+.btn-donation:hover {
+  color: red;
+}
+
+.social a {
+  color: white;
+  font-size: 18px;
+  padding: 0px 5px;
+}
+.social a:hover {
+  color: red;
+}
+
+.nav-item {
+  margin: 0px 10px;
+  padding: 0;
+}
+
+.social {
+  margin: 0;
+}
+
+.modal-title {
+  font-size: 1em;
+  font-family: "Montserrat";
+}
+.modal-backdrop {
+  z-index: -1;
+}
+.modal-frame {
+  width: 100%;
+  height: 750px !important;
+}
+.modal {
+  height: 100vh !important;
+}
+
+.text-red {
+  color: red;
+  font-weight: 500;
+}
+
+.nav-item {
+  align-self: center;
+}
+
+/* ========== Media  Queries (MED DEVICES)===============*/
+@media screen and (max-width: 1024px) {
+}
+
+/* ========== Media  Queries (SMALL DEVICES)===============*/
+@media screen and (max-width: 600px) {
+  nav {
+    grid-template-columns: 1fr;
+    grid-row: 1;
+    width: max-content;
+    /*start, end, center, stretch*/
+    justify-items: end;
+    /*start, end, center, stretch*/
+    align-items: center;
+    gap: 0rem;
+    width: 100%;
+  }
+  .clock{
+    width: auto;
+  }
+  .top-navigation {
+    display: none;
+  }
+  .top-navigation-sm {
+    display: flex;
+    margin: 0px 5px;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+  .nav-item {
+    margin: 0.3rem;
+  }
+}

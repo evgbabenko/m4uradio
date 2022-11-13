@@ -1,0 +1,141 @@
+.podcasts {
+  text-align: center;
+  position: relative;
+  display: block;
+}
+
+.podcast-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.podcast-banner {
+  position: relative;
+  margin: 10px 10px;
+  transition: var(--transition);
+}
+
+.podcast-banner:hover {
+    scale: 1.1;
+    
+}
+
+.podcast-img {
+  text-align: center;
+  align-self: center;
+  justify-self: center;
+  padding: 10px 10px;
+}
+
+.podcast-img img {
+    
+    border-radius: 1rem;
+}
+
+    .card-img-top{
+        height: auto;
+        width: 99%;
+        align-self: center;
+    }
+    .card{
+        background: transparent;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #mobile-control{
+        display: none;
+    }
+
+    .btn-group{
+        width: 100%;
+    }
+    .mobile-control{
+        width: 50%;
+        background: rgba(0,0,0,0.5);
+        color: var(--color-white);
+        border-color: var(--color-primary);
+        padding: 5px;
+    }
+    ol, ul {
+      padding-left: 0;
+    }
+
+/* ========== Media  Queries (MED DEVICES)===============*/
+@media screen and (max-width: 1024px) {
+    .bottom-spacer{
+        height: 30px;
+    }
+}
+
+/* ========== Media  Queries (SMALL DEVICES)===============*/
+@media screen and (max-width: 600px) {
+    .podcast-list {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        margin: 0px 0px;
+        padding: 0px 0px;
+      }
+      #mobile-control{
+        display: block;
+    }
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

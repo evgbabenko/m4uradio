@@ -1,0 +1,45 @@
+.bottom-player {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(
+    208deg,
+    rgba(74, 141, 194, 1) 9%,
+    rgba(53, 85, 146, 1) 30%,
+    rgba(27, 44, 88, 1) 66%,
+    rgba(58, 83, 149, 1) 94%
+  );
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  -webkit-box-shadow: 0px 5px 11px -5px rgba(197, 197, 197, 0.6) inset;
+  -moz-box-shadow: 0px 5px 11px -5px rgba(197, 197, 197, 0.6) inset;
+  box-shadow: 0px 5px 11px -5px rgba(197, 197, 197, 0.6) inset;
+}
+.content {
+  margin-top: var(--menu-space);
+  padding: 20px 20px;
+}
+
+.bottom-spacer {
+  height: 80px;
+}
+
+
+/* ========== Media  Queries (MED DEVICES)===============*/
+@media screen and (max-width: 1024px) {
+  .bottom-spacer {
+    height: 30px;
+  }
+}
+
+/* ========== Media  Queries (SMALL DEVICES)===============*/
+@media screen and (max-width: 600px) {
+  .content {
+    padding: 10px 5px;
+  }
+  .bottom-spacer {
+    height: 100px !important;
+  }
+}

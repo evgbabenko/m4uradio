@@ -1,0 +1,12 @@
+.accordion-item{
+    background: rgba(0,0,0,0.4);
+    border: none;
+}
+.accordion-button{
+    font-weight: 700;
+    background: rgba(255,255,255,0.3);
+}
+
+.accordion-button:not(.collapsed){
+    background: rgba(255,255,255,0.7);
+}
