@@ -1,0 +1,55 @@
+header {
+  width: 100%;
+}
+
+.header-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+.header-text {
+  width: 100%;
+}
+
+.slogan {
+  font-size: 5rem;
+  margin: 2rem 0;
+  text-transform: uppercase;
+}
+.today-on-air {
+  width: 100%;
+}
+
+/* ========== Media  Queries (MED DEVICES)===============*/
+@media screen and (max-width: 1600px) {
+  .slogan {
+    font-size: 2.5rem;
+  }
+}
+
+/* ========== Media  Queries (MED DEVICES)===============*/
+@media screen and (max-width: 1024px) {
+  .header-section {
+    margin-top: 0;
+    display: inline;
+  }
+  .slogan {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+
+/* ========== Media  Queries (SMALL DEVICES)===============*/
+@media screen and (max-width: 600px) {
+  .header-section {
+    display: inline;
+  }
+  .slogan {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .header-player {
+    display: none;
+  }
+}

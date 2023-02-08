@@ -1,0 +1,83 @@
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  width: 100%;
+  margin-top: 3rem;
+}
+.contact-info {
+  width: 50%;
+  padding-right: 20px;
+}
+.contact-form {
+  width: 50%;
+}
+.donat-item{
+    margin: 15px 0px;
+}
+.contact-form-container {
+  width: 100%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-bg-variant);
+  resize: none;
+  color: var(--color-white);
+}
+input::placeholder,
+textarea::placeholder{
+  color: var(--color-white);
+}
+.donation-text {
+  font-size: 1rem;
+  line-height: 2rem;
+}
+.djinfo{
+  margin-bottom: 3rem;
+  line-height: 2rem;
+}
+.underline{
+  text-decoration: underline;
+}
+.underline:hover{
+  color:red;
+}
+.text-red{
+  -webkit-touch-callout:text; /* iOS Safari */
+  -webkit-user-select:text; /* Safari */
+   -khtml-user-select: text; /* Konqueror HTML */
+     -moz-user-select: text; /* Old versions of Firefox */
+      -ms-user-select: text; /* Internet Explorer/Edge */
+          user-select: text; /* Non-prefixed version, currently
+                                supported by Chrome, Edge, Opera and Firefox */
+}
+/* ========== Media  Queries (MED DEVICES)===============*/
+@media screen and (max-width: 1024px) {
+}
+
+/* ========== Media  Queries (SMALL DEVICES)===============*/
+@media screen and (max-width: 600px) {
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    width: 100%;
+  }
+  .contact-info {
+    width: 100%;
+  }
+  .contact-form {
+    width: 100%;
+  }
+}

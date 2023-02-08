@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "minisystem";
+    src: url("../../fonts/minisystem.ttf");
+}
+
+.digital-clock{
+    font-size: 1.3em;
+    font-family: "minisystem", "DS-DIGITAL";
+}
+
+@media screen and (max-width: 600px) {
+    .digital-clock{
+        font-size: 1rem;
+    }
+    #dd{
+        display: none;
+    }
+}

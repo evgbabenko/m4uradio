@@ -1,0 +1,82 @@
+  {/*  <nav id='nav'>
+            <div className='logo'>
+            <Link to="/"><img src={Logo} alt="logo" className='logo' /></Link>
+            </div>
+            <ul className="top-navigation">
+                <li><Link to="/" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>Home</Link></li>
+                <li><Link to="/shows" onClick={() => setActiveNav('shows')} className={activeNav === 'shows' ? 'active' : ''}>Shows</Link></li>
+                <li><a href="#" onClick={() => setActiveNav('djs')} className={activeNav === 'djs' ? 'active' : ''}>Resident DJ's</a></li>
+                <li><a href="#" onClick={() => setActiveNav('news')} className={activeNav === 'news' ? 'active' : ''}>News</a></li>
+                <li><Link to="/podcasts" onClick={() => setActiveNav('podcasts')} className={activeNav === 'podcasts' ? 'active' : ''}>Podcasts</Link></li>
+                <li><a href="#" onClick={() => setActiveNav('application')} className={activeNav === 'application' ? 'active' : ''}>Application</a></li>
+                <li><a href="#" onClick={() => setActiveNav('about')} className={activeNav === 'about' ? 'active' : ''}>About</a></li>
+                <li><Link to="/contact" onClick={() => setActiveNav('contact')} className={activeNav === 'contact' ? 'active' : ''}>Contact</Link></li>
+            </ul>
+            <ul className="top-navigation-sm">
+                <li><Link to="/" onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}><AiOutlineHome /></Link></li>
+                <li><Link to="/shows" onClick={() => setActiveNav('shows')} className={activeNav === 'shows' ? 'active' : ''}><BiShowAlt /></Link></li>
+                <li><a href="#" onClick={() => setActiveNav('djs')} className={activeNav === 'djs' ? 'active' : ''}><BiMusic /></a></li>
+                <li><a href="#" onClick={() => setActiveNav('news')} className={activeNav === 'news' ? 'active' : ''}><BiNews /></a></li>
+                <li><Link to="/podcasts" onClick={() => setActiveNav('podcasts')} className={activeNav === 'podcasts' ? 'active' : ''}><BiPodcast /></Link></li>
+                <li><a href="#" onClick={() => setActiveNav('application')} className={activeNav === 'application' ? 'active' : ''}><DiAndroid /></a></li>
+                <li><a href="#" onClick={() => setActiveNav('about')} className={activeNav === 'about' ? 'active' : ''}><MdOutlineRateReview /></a></li>
+                <li><Link to="/contact" onClick={() => setActiveNav('contact')} className={activeNav === 'contact' ? 'active' : ''}><AiOutlineContacts /></Link></li>
+            </ul>
+
+            <button type="button" className="btn btn-primary btn-donation" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                Donation
+              </button>
+              <ul className="nav social justify-content-center align-content-center">
+                <li className="nav-item"><a href="https://facebook.com/M4URADIOUA/" target="_blabk"><AiOutlineFacebook /></a></li>
+                <li className="nav-item"><a href="https://instagram.com/M4URADIOUA/" target="_blabk"><AiOutlineInstagram /></a></li>
+                <li className="nav-item"><a href="https://www.youtube.com/channel/UCLu7ieilESQnmEkEXh3RUag" target="_blabk"><AiOutlineYoutube /></a></li>
+                <li className="nav-item"><a href="https://www.mixcloud.com/M4URADIOUA/" target="_blabk"><SiMixcloud /></a></li>
+              </ul>
+
+              <div className="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabIndex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div className="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <h5 className="modal-title" id="staticBackdropLabel">Допомоги проєкту</h5>
+                      <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                    </div>
+                    <div className="modal-body">
+                      <iframe allow="payment" className='modal-frame' src='https://secure.wayforpay.com/donate/db5065d3756d4' />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+                       <a href='#' onClick={() => setActiveNav('#')} className={activeNav === '#' ? 'active' : ''}>
+                <AiOutlineHome />
+                <div className='hint'>Home</div>
+            </a>
+            <a href='#about' onClick={() => setActiveNav('about')} className={activeNav === 'about' ? 'active' : ''}>
+                <BiShowAlt />
+                <div className='hint'>Show</div>
+            </a>
+            <a href='#experience' onClick={() => setActiveNav('experience')} className={activeNav === 'experience' ? 'active' : ''}>
+                <BiMusic />
+                <div className='hint'>Resident DJ's</div>
+            </a>
+            <a href='#services' onClick={() => setActiveNav('services')} className={activeNav === 'services' ? 'active' : ''}>
+                <BiNews />
+                <div className='hint'>News</div>
+            </a>
+            <a href='#portfolio' onClick={() => setActiveNav('portfolio')} className={activeNav === 'portfolio' ? 'active' : ''}>
+                <BiShoppingBag />
+                <div className='hint'>Shop</div>
+            </a>
+            <a href='#testimonials' onClick={() => setActiveNav('testimonials')} className={activeNav === 'testimonials' ? 'active' : ''}>
+                <DiAndroid />
+                <div className='hint'>Application</div>
+            </a>
+            <a href='#testimonials' onClick={() => setActiveNav('testimonials')} className={activeNav === 'testimonials' ? 'active' : ''}>
+                <MdOutlineRateReview />
+                <div className='hint'>About</div>
+            </a>
+            <a href='#contact' onClick={() => setActiveNav('contact')} className={activeNav === 'contact' ? 'active' : ''}>
+                <AiOutlineContacts />
+                <div className='hint'>Contact</div>
+            </a> 
+        </nav>*/}

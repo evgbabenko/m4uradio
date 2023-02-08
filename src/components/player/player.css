@@ -1,0 +1,162 @@
+/* .player {
+  width: 100%;
+  height: max-content;
+} */
+
+@font-face {
+  font-family: "DS-DIGITAL";
+  src: url("../../fonts/DS-DIGI.TTF");
+}
+
+.player-control {
+  width: 100%;
+  height: 100px !important;
+  display: grid;
+  grid-template-columns: 100px 100px 1fr 100px;
+  gap: 1rem;
+}
+.play-button,
+.stop-button {
+  border-radius: 100rem;
+  font-size: 1.2rem;
+  height: 60px;
+  width: 60px;
+  color: var(--color-white);
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px black inset;
+}
+
+.buttonplace {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-25%, -40%);
+}
+
+.play-button:hover,
+.stop-button:hover {
+  box-shadow: none;
+  color: white;
+}
+
+.stop-button {
+  border-radius: 100rem;
+  font-size: 1.2rem;
+  height: 60px;
+  width: 60px;
+  color: var(--color-white);
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px black inset;
+  display: none;
+}
+
+.play-button1 {
+  border-radius: 100rem;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  font-size: 1.2rem;
+  height: 80px;
+  width: 80px;
+  color: var(--color-white);
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(101deg, #78e4ff, #ff48fa);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px black inset;
+}
+
+.play-button1:hover {
+  box-shadow: none;
+  color: white;
+}
+
+.hidden-audio {
+  visibility: hidden;
+}
+
+#onair {
+  padding-top: 10px;
+  font-size: 1.3rem;
+}
+
+.player {
+  width: 100%;
+  height: 80px;
+}
+
+.player-small {
+  position: relative;
+  display: flex;
+}
+
+.onair-small {
+  padding: 0px 20px;
+  align-self: center;
+}
+
+.onair {
+  padding: 10px 0px;
+}
+
+.onair > div {
+  font-size: 1rem;
+}
+
+.currtime {
+  justify-self: center;
+  align-self: center;
+  font-family: "minisystem", "DS-DIGITAL";
+  font-size: 1.3rem;
+}
+
+
+
+/* ========== Media  Queries (MED DEVICES)===============*/
+@media screen and (max-width: 1024px) {
+}
+
+/* ========== Media  Queries (SMALL DEVICES)===============*/
+@media screen and (max-width: 600px) {
+  .player-title {
+    font-size: 3rem;
+    height: max-content;
+    padding-bottom: 2rem;
+  }
+  #onair {
+    font-size: 1rem;
+  }
+  .onair > div {
+    font-size: 0.8rem;
+  }
+  .player-control {
+    grid-template-columns: 80px 80px 1fr;
+  }
+  .currtime {
+    align-self: baseline;
+    padding-top: 30px;
+    font-size: 1.5rem;
+  }
+
+}
